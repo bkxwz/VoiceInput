@@ -1,0 +1,22 @@
+<Window x:Class="VoiceInput.UI.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" Height="300" Width="400">
+    <Grid>
+        <StackPanel Margin="20">
+            <Label Content="Global Hotkey:"/>
+            <TextBox x:Name="HotkeyBox"/>
+
+            <Label Content="Model Path:" Margin="0,10,0,0"/>
+            <TextBox x:Name="ModelPathBox"/>
+
+            <Label Content="API Base URL:" Margin="0,10,0,0"/>
+            <TextBox x:Name="ApiUrlBox"/>
+
+            <Label Content="API Key:" Margin="0,10,0,0"/>
+            <PasswordBox x:Name="ApiKeyBox"/>
+
+            <Button Content="Save" Margin="0,20,0,0" HorizontalAlignment="Right" Width="80" Click="OnSaveClicked"/>
+        </StackPanel>
+    </Grid>
+</Window>

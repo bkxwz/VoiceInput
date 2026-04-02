@@ -1,0 +1,1 @@
+Resources directory to store Whisper models, icon files and other assets.
