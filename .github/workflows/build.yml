@@ -28,7 +28,7 @@ jobs:
       run: dotnet publish VoiceInput.App/VoiceInput.App.csproj --configuration Release --runtime win-x64 --self-contained -o ./publish
 
     - name: Upload Build Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: BuildOutput
         path: ./publish
